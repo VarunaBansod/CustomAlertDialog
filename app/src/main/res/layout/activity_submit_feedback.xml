@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitFeedback"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:fontFamily="serif"
+        android:text="Help Us Improve"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trainerRateTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:text="Q1. How much would you rate our trainer?"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <RatingBar
+        android:id="@+id/trainerRatingBar"
+        android:layout_width="240dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/trainerRateTv"
+        app:layout_constraintStart_toStartOf="@+id/trainerRateTv"
+        app:layout_constraintTop_toBottomOf="@+id/trainerRateTv" />
+    <TextView
+        android:id="@+id/vdoAudioTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Q2. How much you'd rate video/audio quality?"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/trainerRatingBar"
+        app:layout_constraintStart_toStartOf="@+id/trainerRatingBar"
+        app:layout_constraintTop_toBottomOf="@+id/trainerRatingBar" />
+
+    <RatingBar
+        android:id="@+id/vdoAudioratingBar"
+        android:layout_width="240dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/black"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="@+id/vdoAudioTv"
+        app:layout_constraintStart_toStartOf="@+id/vdoAudioTv"
+        app:layout_constraintTop_toBottomOf="@+id/vdoAudioTv" />
+
+    <TextView
+        android:id="@+id/portalTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Q3. How much would you rate UI of this application?"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/vdoAudioratingBar"
+        app:layout_constraintStart_toStartOf="@+id/vdoAudioratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/vdoAudioratingBar" />
+
+    <RatingBar
+        android:id="@+id/portalratingBar"
+        android:layout_width="240dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/black"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="@+id/portalTv"
+        app:layout_constraintStart_toStartOf="@+id/portalTv"
+        app:layout_constraintTop_toBottomOf="@+id/portalTv" />
+
+    <TextView
+    android:id="@+id/otherTv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/black"
+    android:text="Report another issue below"
+    android:textSize="18dp"
+    app:layout_constraintEnd_toEndOf="@+id/portalratingBar"
+    app:layout_constraintStart_toStartOf="@+id/portalratingBar"
+    app:layout_constraintTop_toBottomOf="@+id/portalratingBar" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Share your opinion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/otherTv"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="@+id/otherTv"
+        app:layout_constraintTop_toBottomOf="@+id/otherTv" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
