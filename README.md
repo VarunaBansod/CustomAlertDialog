@@ -23,3 +23,6 @@
 2. make varialbe in .kt file `val spinnerId = findViewById<Spinner>(R.id.spinner)`
 3. make array containg all the option `val sessionAttended = arrayOf("less that 5", "less that 10", "less that 20", "less that 50", "more than 50","more that 100", "All sessions attended" )`
 4. add adapter and call it `val arrayAdp = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, sessionAttended)` `spinnerId.adapter = arrayAdp`
+
+# Video of this project
+https://github.com/VarunaBansod/CustomAlertDialog/assets/65997106/cec6331d-0195-4ee1-9882-708ba50f6808
